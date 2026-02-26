@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //JS variable Data value types
+
+        //primitive : immutable single value and stores in memory.
+
+        //string====
+        var myName = "Dev chaudhary" ;
+        console.log(" my name is " + myName);
+        console.log(typeof(myName));
+        
+        //number
+        var myMob = 6395077303
+        console.log(" my Mobile no is " + myMob);
+        console.log(typeof(myMob));
+
+       //Boolean 
+       var isMarried=true;
+       console.log(myName + " is married ? " + isMarried);
+       console.log(typeof(isMarried));
+
+       //Undefined
+       var myAdd;
+       console.log( myName + " address is " + myAdd);
+       console.log(typeof(myAdd));
+
+       //null
+       var myEmail=null;
+       console.log(myName + " email address is " + myEmail);
+       console.log(typeof(myEmail));
+
+       //bigint
+       var myValue=BigInt(12345678901234567890);
+       console.log(myValue);
+       console.log(typeof(myValue));
+
+       //Symbol
+       var val1=Symbol("Hello");
+       var val2=Symbol("Hello");
+       console.log(val1==val2);
+       console.log(typeof(val1) + "and" + typeof(val2));
+
+       //Reference or non primitive Data type=============
+       //object - values are defined in paired of key-value
+    let myInfo={
+        name:"Dev chaudhary",
+        age:18,
+        mob:6395077303,
+        eMail:"devc123@gmail.com",
+        isMarried:false,
+        address:null,
+        branch:"CSE",
+        section:18
+    };
+    console.log(myInfo);
+    console.log(Object.keys(myInfo).length);
+    console.log(myInfo.branch);
+
+    </script>
+</body>
+</html>
